@@ -1,12 +1,9 @@
-import MiradorHelpPlugin from './plugins/miradorHelpPlugin';
-import MiradorHelpDialogPlugin from './plugins/miradorHelpDialog';
+import copyrightLabel from './plugins/copyrightLabel';
 
 export {
-  MiradorHelpPlugin,
-  MiradorHelpDialogPlugin,
+  copyrightLabel,
 };
 
 export default [
-  MiradorHelpPlugin,
-  MiradorHelpDialogPlugin,
+  copyrightLabel,
 ];

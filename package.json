@@ -46,6 +46,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "dependencies": {
+    "jquery": "^3.7.1",
     "prop-types": "^15.8.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0"
