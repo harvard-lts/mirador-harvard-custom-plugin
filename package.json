@@ -1,12 +1,12 @@
 {
-  "name": "@harvard-lts/mirador-help-plugin",
+  "name": "@harvard-lts/mirador-harvard-custom-plugin",
   "license": "Apache-2.0",
-  "repository": "https://github.com/harvard-lts/mirador-help-plugin.git",
+  "repository": "https://github.com/harvard-lts/mirador-harvard-custom-plugin.git",
   "keywords": [
     "react-component"
   ],
-  "version": "1.1.0",
-  "description": "mirador-help-plugin React component",
+  "version": "1.0.0",
+  "description": "mirador-harvard-custom-plugin React component",
   "module": "dist/es/index.js",
   "files": [
     "dist"

@@ -1,6 +1,10 @@
-# mirador-help-plugin
+# mirador-harvard-custom-plugin
 
-Mirador plugin that adds a help modal window with a list of links. Links are currently Harvard-specific.
+Mirador plugin that adds Harvard-specific customizations.
+
+Current customizations include:
+* Replace Mirador logo in lower left corner with Harvard shield (also no longer a link)
+* Replace the license url text with "Copyright & Terms of Use" (rather than display the url itself)
 
 ## Requirements
 
@@ -25,12 +29,12 @@ The following are some useful scripts can be ran using `npm run <script>`. A ful
 
 ## Installing in Mirador
 
-The `mirador-help-plugin` requires an instance of Mirador 3. Visit the [Mirador wiki](https://github.com/ProjectMirador/mirador/wiki) to learn how to [install an existing plugin](https://github.com/ProjectMirador/mirador/wiki/Mirador-3-plugins#installing-an-existing-plugin) and for additional information about plugins.
+The `mirador-harvard-custom-plugin` requires an instance of Mirador 3. Visit the [Mirador wiki](https://github.com/ProjectMirador/mirador/wiki) to learn how to [install an existing plugin](https://github.com/ProjectMirador/mirador/wiki/Mirador-3-plugins#installing-an-existing-plugin) and for additional information about plugins.
 
 Package you will need to install:
 
 ```bash
-npm i @harvard-lts/mirador-help-plugin
+npm i @harvard-lts/mirador-harvard-custom-plugin
 ```
 
 
