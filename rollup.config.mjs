@@ -1,4 +1,5 @@
 import { babel } from "@rollup/plugin-babel";
+import image from '@rollup/plugin-image';
 
 const config = {
   input: "src/index.js",
@@ -6,7 +7,7 @@ const config = {
     dir: "dist/es",
     format: "es",
   },
-  plugins: [babel({ babelHelpers: "bundled" })],
+  plugins: [babel({ babelHelpers: "bundled" }),image()],
 };
 
 export default config;
