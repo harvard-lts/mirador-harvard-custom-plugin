@@ -1,12 +1,12 @@
-import MiradorHelpPlugin from './plugins/miradorHelpPlugin';
-import MiradorHelpDialogPlugin from './plugins/miradorHelpDialog';
+import copyrightLabel from './plugins/copyrightLabel';
+import harvardBranding from './plugins/harvardBranding';
 
 export {
-  MiradorHelpPlugin,
-  MiradorHelpDialogPlugin,
+  copyrightLabel,
+  harvardBranding,
 };
 
 export default [
-  MiradorHelpPlugin,
-  MiradorHelpDialogPlugin,
+  copyrightLabel,
+  harvardBranding,
 ];

@@ -30,6 +30,10 @@ module.exports = (env, options) => {
             fullySpecified: false,
           },
         },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,  
+          type: 'asset/resource', 
+        },
       ],
     },
     devServer: {
