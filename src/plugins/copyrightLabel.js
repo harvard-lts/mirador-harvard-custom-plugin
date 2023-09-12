@@ -16,6 +16,9 @@ class copyrightLabel extends Component {
       if ($el.html() === "License"){
         $el.next().children().text("Copyright & Terms of Use");
       }
+      if ($el.html() === "Attribution"){
+        $el.next().children().children().text("Copyright & Terms of Use");
+      }
     });
   }
 }
