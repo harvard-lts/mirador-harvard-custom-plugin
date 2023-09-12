@@ -4,7 +4,7 @@ Mirador plugin that adds Harvard-specific customizations.
 
 Current customizations include:
 * Replace Mirador logo in lower left corner with Harvard shield (also no longer a link)
-* Replace the license url text with "Copyright & Terms of Use" (rather than display the url itself)
+* Replace the license/attribution url text with "Copyright & Terms of Use" (rather than display the url itself)
 
 ## Requirements
 
