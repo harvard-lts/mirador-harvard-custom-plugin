@@ -1,23 +1,36 @@
 import React, { Component } from 'react';
-import $ from "jquery";
+
+const COPYRIGHT_LABEL = 'Copyright & Terms of Use';
+
+const setFirstChildText = (el, text) => {
+  if (el && el.firstElementChild) {
+    el.firstElementChild.textContent = text;
+  }
+};
+
+const setNestedChildText = (el, text) => {
+  if (el && el.firstElementChild && el.firstElementChild.firstElementChild) {
+    el.firstElementChild.firstElementChild.textContent = text;
+  }
+};
 
 class copyrightLabel extends Component {
   render() {
-
     return (
       <></>
     );
   }
 
   componentDidUpdate() {
-    $(".MuiTypography-root.MuiTypography-subtitle2").each(function(){
-      const $el = $(this);
-
-      if ($el.html() === "License"){
-        $el.next().children().text("Copyright & Terms of Use");
-      }
-      if ($el.html() === "Attribution" || $el.html() === "Provided by"){
-        $el.next().children().children().text("Copyright & Terms of Use");
+    const labels = window.document.querySelectorAll(
+      '.MuiTypography-root.MuiTypography-subtitle2',
+    );
+    labels.forEach((el) => {
+      const text = el.textContent;
+      if (text === 'License') {
+        setFirstChildText(el.nextElementSibling, COPYRIGHT_LABEL);
+      } else if (text === 'Attribution' || text === 'Provided by') {
+        setNestedChildText(el.nextElementSibling, COPYRIGHT_LABEL);
       }
     });
   }
@@ -27,4 +40,4 @@ export default {
   target: 'AttributionPanel',
   mode: 'add',
   component: copyrightLabel,
-}
+};
