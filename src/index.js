@@ -1,5 +1,5 @@
 import copyrightLabel from './plugins/copyrightLabel';
-import harvardBranding from './plugins/harvardBranding';
+import harvardBranding from './plugins/harvardBranding.jsx';
 
 export {
   copyrightLabel,

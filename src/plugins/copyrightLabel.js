@@ -4,9 +4,7 @@ import $ from "jquery";
 class copyrightLabel extends Component {
   render() {
 
-    return (
-      <></>
-    );
+    return ("");
   }
 
   componentDidUpdate() {
