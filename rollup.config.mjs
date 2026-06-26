@@ -7,6 +7,7 @@ const config = {
     dir: "dist/es",
     format: "es",
   },
+  external: [/^react($|\/)/, /^react-dom($|\/)/, "mirador", /^@mui\//, /^@emotion\//, "jquery"],
   plugins: [babel({ babelHelpers: "bundled" }),image()],
 };
 
